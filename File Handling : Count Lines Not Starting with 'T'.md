@@ -1,19 +1,33 @@
-# File Handling in Python: Count Lines Not Starting with 'T'
+#  Ex 4e:Generate Fibonacci Series
 
-## 🎯 Aim
-To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'`.
+## Aim
+To write a Python program that generates the Fibonacci series up to a given number of terms.
 
-## 🧠 Algorithm
-1. Open the file `story.txt` in **read mode**.
-2. Initialize a counter `count` to zero.
-3. Iterate through each line of the file:
-   - Check if the first character of the line is **not** `'T'`.
-   - If the line does not start with `'T'`, increment the `count` by 1.
-4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
+## Algorithm
 
-## 🧾 Program
-Add code here
+1.Start the program.
 
-## Output
+2.Read the number n from the user.
+
+3.Initialize the first two Fibonacci numbers: a = 0, b = 1.
+
+4.Use a loop to print n Fibonacci numbers:
+      Print a
+      Compute the next number as c = a + b
+      Update a = b, b = c
+
+5.End the program.
+## Program
+```
+n = int(input())
+a, b = 0, 1
+
+for i in range(n):
+    print(a)
+    a, b = b, a + b
+```
+## Sample Output
+<img width="355" height="377" alt="image" src="https://github.com/user-attachments/assets/7ae7b98a-2882-4c20-8ff0-80b7cae3d728" />
 
 ## Result
+Thus, the program successfully generated the Fibonacci series for the given number of terms.
