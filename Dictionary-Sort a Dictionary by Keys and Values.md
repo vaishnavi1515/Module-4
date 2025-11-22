@@ -1,38 +1,44 @@
-# 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
+# Ex 4c:File Handling in Python: Reverse file contents and save to another file
 
-This Python program demonstrates how to sort a dictionary:
-- Alphabetically by keys
-- Alphabetically by values
+## Aim
+To write a Python script that reads the contents of a file, reverses the text, and saves the reversed content into another file.
+## Algorithm
 
----
+1.Start the program.
 
-## 🎯 Aim
+2.Create a function to write content into the input file.
 
-To write a Python program that sorts a dictionary's:
-- Keys in alphabetical order
-- Values in alphabetical order
+3.Create another function to read content from a file.
 
----
+4.Create a function to reverse the content: 
+      Read the content from the input file.
+      Reverse the string using slicing.
+      Write the reversed content into the output file.
 
-## 🧠 Algorithm
+5.Take input text from the user.
 
-1. **Start the program.**
-2. **Define** a dictionary with key-value pairs.
-3. **Sort by Keys**:
-   - Use `sorted(dictionary.items())`
-   - Convert the result to a dictionary using `dict()`
-4. **Sort by Values**:
-   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
-   - Convert the result to a dictionary using `dict()`
-5. **Display** the original and sorted dictionaries.
-6. **End the program.**
+6.Call the functions to create the input file, reverse its content, and display the output.
 
----
+7.End the program.
+## Program
+```
+def create_file(file_path, content):
+    with open(file_path, 'w') as file:
+        file.write(content)
 
-## 🧪Program
-Add Code here
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
 
-## Sample Output
+def reverse_file_content(input_file_path, output_file_path):
+    with open(input_file_path, 'r') as file:
+        content = file.read()
+    with open(output_file_path, 'w') as file:
+        file.write(content[::-1])
+```
+
+## Output
+<img width="1090" height="333" alt="image" src="https://github.com/user-attachments/assets/673c573e-9af7-4589-956f-e8821211ec68" />
 
 ## Result
-
+Thus, the Python program successfully reversed the contents of a file and saved the reversed text into another file.
