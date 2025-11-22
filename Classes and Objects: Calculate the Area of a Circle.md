@@ -1,19 +1,31 @@
-# Classes and Objects in Python: Calculate the Area of a Circle
+## Ex 4a:Dictionary Operations in Python: Merging Two Dictionaries
 
-## 🎯 Aim
-To write a Python program that calculates the **area of a circle** based on the radius provided by the user. This program uses a class named `cse` and a method `mech` to perform the calculation.
+## Aim
+To write a Python program that merges **two dictionaries** and combines their key-value pairs.
 
-## 🧠 Algorithm
-1. **Get user input**: Take the radius of the circle as input from the user.
-2. **Define the class**: Create a class named `cse`.
-3. **Define the method**: Inside the class, define the method `mech` to calculate the area of the circle using the formula:  
-   Area = pi *r^2 
-4. **Execute the program**: Create an object of the class and call the method with the radius value.
+## Algorithm
+1.Start the program.
 
-## 🧾 Program
+2.Read the first dictionary using eval().
 
-Add code here
+3.Read the second dictionary using eval().
 
+4.Merge the two dictionaries using the update() method.
+
+5.Display the merged dictionary.
+
+6.End the program.
+## Program
+```
+dict1 = eval(input())
+dict2 = eval(input())
+
+dict1.update(dict2)
+print(dict1)
+```
 ## Output
+<img width="1310" height="190" alt="image" src="https://github.com/user-attachments/assets/4c8f195d-6a04-4fff-bdea-07aae2728dd2" />
 
 ## Result
+Thus, the program successfully merges dictionary1 with dictionary2 and displays the combined dictionary.
+
